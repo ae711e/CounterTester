@@ -32,7 +32,8 @@ class Counter
 {
   private long counter = 0L;
   
-  public void increaseCounter()
+  // делаем ресурс синхронным, т.е. ограниченным по доступу (synchronized)
+  public synchronized void increaseCounter()
   {
     counter++;
   }
